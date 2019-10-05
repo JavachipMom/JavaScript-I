@@ -57,19 +57,29 @@ const intern1 = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+  console.log(intern1.name);
 // Kennan's ID
-
+  console.log(intern2.id);
 // Keven's email
-
+  console.log(intern3.email);
 // Gannie's name
-
+  console.log(intern4.name);
 // Antonietta's Gender
-
+  console.log(intern5.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
+  intern2.speak = function(){
+    return "Hello, my name is " + intern2.name + "!";
+  };
 
+  console.log(intern2.speak());
+
+  let speak = function(name) {
+    return "Hello, my name is " + name + "!";
+  }
+
+  console.log(speak(intern2.name));
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
