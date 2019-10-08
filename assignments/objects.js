@@ -69,19 +69,25 @@ const intern1 = {
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-  intern2.speak = function(){
+  intern2.speak = () => {
     return "Hello, my name is " + intern2.name + "!";
   };
 
   console.log(intern2.speak());
 
-  let speak = function(name) {
+  let speak = name => {
     return "Hello, my name is " + name + "!";
-  }
+  };
 
   console.log(speak(intern2.name));
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+let multiplyNums = (num1, num2) => {
+  return num1 * num2;
+};
+
+console.log(intern5.name + " multiplied the two numbers and got " + multiplyNums(3,4) + "!");
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
